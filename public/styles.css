@@ -1,10 +1,45 @@
 body {
     font-family: "Lato", sans-serif;
     background-color: #e3e3e3;
+    margin: 20px;
 }
 
-.main {
+.main p {
     color: #131313;
     margin-left: 10%;
     margin-top: 3%;
+    text-align: left;
+}
+
+.images {
+    float: right;
+    margin-top: 5%;
+    padding-left: 5%;
+}
+
+footer {
+    position:absolute;
+    bottom:0;
+    width:95%;
+    height:14px;
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 0.5%;
+}
+
+footer a {
+    color: #F45D62;
+    padding-left: 0.5%;
+}
+
+table, th, td {
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 40%
+}
+
+.skills {
+    padding-top: 10%;
 }
