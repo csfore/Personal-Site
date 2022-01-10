@@ -12,11 +12,18 @@ body {
     font-size: 18px;
 }
 
+@media (min-width: 768px) {
+    .images {
+        float: right;
+        margin-top: 5%;
+        padding-left: 5%;
+        align-items:flex-end;
+    }
+}
+
 .images {
-    float: right;
-    margin-top: 5%;
+    margin: 5%;
     padding-left: 5%;
-    align-items: center;
 }
 
 footer {
@@ -44,4 +51,8 @@ table, th, td {
 
 .skills {
     padding-top: 4%;
+}
+
+.nav {
+    float: left;
 }
