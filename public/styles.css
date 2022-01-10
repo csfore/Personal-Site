@@ -12,17 +12,27 @@ body {
     font-size: 18px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .images {
+        width: 400px;
+        height: 530px;
         float: right;
         margin-top: 5%;
         padding-left: 5%;
-        align-items:flex-end;
+        display: none;
     }
+
+    .initials {
+        display: none;
+      }
 }
 
+
 .images {
-    margin: 5%;
+    width: 308px;
+    height: 395px;
+    float: right;
+    margin-top: 5%;
     padding-left: 5%;
 }
 
