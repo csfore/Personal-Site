@@ -21,6 +21,8 @@
         <link rel="stylesheet" href="footer.css">
 
         <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="dropdown.css">
     </head>
 
     <body>
@@ -35,18 +37,39 @@
         <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="hamburger"></span>-->
         
         <div class="container">
-            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-              <a href="#" class="initials d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                <span class="initials fs-4">CF</span>
-              </a>
+            <div class="desktop-nav">
+                <header class="top d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                    <a href="#" class="initials d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                        <span class="initials fs-4">CF</span>
+                    </a>
+                
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                        <div class="dropdown">
+                            <li class="nav-item nav-link dropbtn">Qualifications</li>
+                            <div class="dropdown-content">
+                            <a href="certifications.html">Certifications</a>
+                            <a href="#">Experience</a>
+                            <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </ul>
+                </header>
+            </div>
+            
+            <div class="mobile-nav">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="qualifications.html">Qualifications</a>
+                </div>
+                <!-- A very hacky way to get this to work, the old method didn't work -->
+                <ion-icon name="menu" onclick="openNav()" class="hamburger" style="font-size:50px;cursor:pointer"></ion-icon>
         
-              <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="qualifications.html" class="nav-link">Qualifications</a></li>
-              </ul>
-            </header>
-        
+            </div>
+            
         <div class="images" id="images">
             <img src="assets/normal.png">
         </div>
@@ -56,15 +79,14 @@
                 Hi! I'm Christopher Fore, a graduate of Highland School of Technology, and an
                 entering underclassman at Rochester Institute of Technology (RIT) in Fall 2022. I have a passion for computers
                 and programming, with knowledge in: Python, C++, HTML/CSS, Flutter, Kotlin, JavaScript, C#, Rust, and Go. I am not
-                an expert by any means in any of these languages, but I am more proficient in Python and C++. At RIT,
+                an expert by any means in any of these languages, but I am more proficient in Python and Rust. At RIT,
                 I hope to major in Computing Security, with hopes of entering the Information Security Analyst field,
                 but I also have interests in the System Administrator and Network Engineer fields.
                 <br>
                 <br>
-                What I'm currently learning is Operating System Development and the Vulkan API, both of which are giant undertakings.
-                I'm mainly learning them as I feel that I need to step outside of the realm of console apps and should learn what's
-                actually being used in the real world, although Vulkan might not be of much help in Computing Security, I still find it
-                interesting nonetheless.
+                What I'm currently learning is Java and Rust to develop a better understanding of low-level programming, and how 
+                it can interact with the system. For Java, I plan to use it for writing universal programs, while with Rust,
+                I hope to gain the ability to write system-level programs like drivers. 
             </p>
             <div class="skills">
                 <table>
@@ -73,16 +95,16 @@
                         <th>Skill Level</th>
                     </tr>
                     <tr>
-                        <td>C++</td>
-                        <td>Mid-Beginner</td>
+                        <td>Rust</td>
+                        <td>Early-Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>Early Beginner</td>
                     </tr>
                     <tr>
                         <td>Python</td>
                         <td>Upper-Beginner</td>
-                    </tr>
-                    <tr>
-                        <td>JavaScript</td>
-                        <td>Early Beginner</td>
                     </tr>
                     <tr>
                         <td>Bash</td>
