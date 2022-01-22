@@ -28,13 +28,14 @@
   
   /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  border-radius: .5rem .5rem 0px 0px;
   background-color: #f1f1f1;
+  border-radius: 0px 0px .5rem .5rem;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
+    border-radius: 0px 0px .5rem .5rem;
 }
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
