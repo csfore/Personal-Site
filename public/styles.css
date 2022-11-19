@@ -64,6 +64,16 @@ a {
         padding-left: 5%;
         margin-right: 10%;
     }
+
+    .me {
+        width: 308px;
+        height: 395px;
+        float: right;
+        margin-top: 5%;
+        padding-left: 5%;
+        margin-right: 10%;
+    }
+
 }
 
 
