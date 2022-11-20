@@ -1,0 +1,50 @@
+.exp-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.exp-wrapper h1 {
+    text-align: center;
+}
+
+.jobs {
+    width: 50%;
+}
+    
+.certs {
+    width: 50%;
+}
+
+.certs .item {
+    padding-bottom: 2em;
+}
+
+input[type=checkbox] {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+label {
+	display: block;
+	border-radius: 2px;
+	font-weight: bold;
+}
+
+.mos-code {
+    display: none;
+}
+
+.py-code {
+    display: none;
+}
+
+input[type=checkbox]:checked ~ .mos-code {
+	color: red;
+    display: contents;
+}
+
+input[type=checkbox]:checked ~ .py-code {
+	color: red;
+    display: contents;
+}
