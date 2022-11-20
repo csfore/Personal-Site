@@ -1,8 +1,13 @@
+:root {
+    --darkback: #181818;
+    --darknav: 
+}
+
 body {
     margin: 0;
     padding: 0;
     color: #d7d7d7;
-    background-color: #181818;
+    background-color: var(--darkback);
     font-family: "Lato", sans-serif;
 }
 
