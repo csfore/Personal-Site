@@ -1,31 +1,41 @@
 @media (min-width: 750px) {
     .exp-wrapper {
-        align-items: center;
         display: flex;
         flex-direction: row;
+    }
 
+    .jobs {
+        width: 50%;
+    }
+        
+    .certs {
+        width: 50%;
     }
 }
 
 @media (max-width: 749px) {
+
     .exp-wrapper {
         display: flex;
         flex-direction: column;
-        width: 50%;
-        margin: auto;
+        width: 85%;
+        margin-top: 2em;
+        margin: 0 auto;
+    }
+
+    .item p {
+        text-align: center;
+    }
+
+    .exp-wrapper h2 {
+        padding-top: .5em;
+        text-align: center;
+        font-weight: lighter;
     }
 }
 
 .exp-wrapper h1 {
     text-align: center;
-}
-
-.jobs {
-    width: 50%;
-}
-    
-.certs {
-    width: 50%;
 }
 
 .certs .item {
