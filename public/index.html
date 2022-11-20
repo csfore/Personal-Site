@@ -17,82 +17,35 @@
         <script src="https://use.fontawesome.com/e6aa246d4c.js"></script>
     </head>
     <body>
-        <div id="mySidenav" class="sidenav">
-            <div class="mobile-button">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            </div>
-            <div class="links">
-                <a href="#">Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="qualifications.html">Qualifications</a>
-            </div>
-        </div>
-        <!-- A very hacky way to get this to work, the old method didn't work -->
-        <div class="mobile-button">
-            <ion-icon name="menu" onclick="openNav()" class="hamburger" style="font-size:50px;cursor:pointer"></ion-icon>
-        </div>
-        <div class="title">
-            A Little About Me
-        </div>
-        <div class="name">
-            Christopher Fore
+        <div class="nav">
+            <a>)</a>
+            <a href="projects.html" class="link">Projects</a>
+            <a>|</a>
+            <a href="#" class="link">Experience</a>
+            <a>|</a>
+            <a href="#" class="link">self</a>
+            <a>^(</a>
+            <a>Learn More About My</a>
         </div>
         <div id="main" class="main">
-            <div class="row">
-                <div class="column">
-                    <ul>
-                        <li class="main-point">
-                            Computing Security Major
-                            <ul>
-                                <li class="sub-point">
-                                    Rochester Institute of Technology
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="main-point">
-                            Programmer
-                            <ul>
-                                <li class="sub-point">
-                                    Python
-                                </li>
-                                <li class="sub-point">
-                                    V
-                                </li>
-                                <li class="sub-point">
-                                    Rust
-                                </li>
-                                <li class="sub-point">
-                                    Clojure
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="main-point">
-                            Computer Repair Specialist
-                            <ul>
-                                <li class="sub-point">
-                                    Physically repaired laptops and desktops
-                                </li>
-                                <li class="sub-point">
-                                    Install new computer hardware
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <p>
-                        <img class="me" src="assets/normal.png"/>
-                    </p>
-                </div>
+            <div class="name">Christopher Fore</div>
+            <div class="socials">
+                <a href="https://gitlab.com/csfore" target="_blank"><ion-icon name="logo-gitlab"></ion-icon></a>
+                •
+                <a href="mailto:contactme@chrisfore.us" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
+                •
+                <a href="https://www.linkedin.com/in/christopher-fore-1b60a2197/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
             </div>
+            <p class="desc">
+                Currently enrolled as a first year Computing Security student at Rochester Institute of Technology,
+                I have had an interest in computers since my mid-teens and enjoy a lot about them. My main fields I'm interested in
+                are: low-level programming utilizing languages such as Rust, V, and C, information security, and network designing. 
+                I am currently learning more about the RISC-V ISA and the Assembly dialect for it. I believe in the principles of 
+                Free and Open Source software, along with donating to organizations such as the EFF and IEEE. 
+            </p>
         </div>
-        <div class="footer" style="position: absolute">
-            <a href="https://gitlab.com/csfore" target="_blank"><i class="fa fa-gitlab" aria-hidden="true"></i></a>
-            <a href="mailto:contactme@chrisfore.us" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/christopher-fore-1b60a2197/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            <a href="https://twitter.com/csfore03" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        </div>
-        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
 
 </html>
