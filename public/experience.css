@@ -40,4 +40,9 @@
 
 .certs .item {
     padding-bottom: 2em;
+    text-align: center;
+}
+
+.certs a {
+    color: #d0a6a6;
 }
