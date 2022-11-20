@@ -1,12 +1,29 @@
-.item {
-    padding-top: 1em;
+@media (min-width: 750px) {
+    .item {
+        padding-top: 1em;
+    }
+    
+    .item a {
+        color: #d7d7d7;
+    }
+    
+    .main {
+        width: 40%;
+        align-items: center;
+    }
 }
 
-.item a {
-    color: #d7d7d7;
-}
-
-.main {
-    width: 40%;
-    align-items: center;
+@media (max-width: 749px) {
+    .item {
+        padding-top: 1em;
+    }
+    
+    .item a {
+        color: #d7d7d7;
+    }
+    
+    .main {
+        width: 60%;
+        align-items: center;
+    }
 }
